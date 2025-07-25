@@ -57,5 +57,5 @@
     `;
   }
 }
+customElements.define('achillighte-menu', AchillighteMenu);
 
-customElements.define("achillighte-menu", AchillighteMenu);
