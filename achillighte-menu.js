@@ -26,7 +26,6 @@ class AchillighteMenu extends HTMLElement {
 
         nav a {
           font-family: 'TitlingGothicFBWideLight', sans-serif;
-          font-size: 16px; /* یا سایزی که می‌خوای مثلاً 18px یا 14px */
           text-transform: uppercase; /* اگه می‌خوای حروف بزرگ باشن */
           letter-spacing: 1px; /* فاصله بین حروف برای حالت مدرن‌تر */
           position: relative;
