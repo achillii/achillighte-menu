@@ -8,7 +8,7 @@ class AchillighteMenu extends HTMLElement {
           gap: 24px;
           padding: 20px 0;
           background: transparent;
-          font-family: 'TitlingGothic FB Wide Light' ;
+          font-family: 'Titling Gothic FB Wide Light', sans-serif;
           position: relative;
         }
 
@@ -25,7 +25,7 @@ class AchillighteMenu extends HTMLElement {
         }
 
         nav a {
-          font-family: 'TitlingGothicFBWideLight', sans-serif;
+          font-family: 'Titling Gothic FB Wide Light', sans-serif;
           text-transform: uppercase; /* اگه می‌خوای حروف بزرگ باشن */
           letter-spacing: 1px; /* فاصله بین حروف برای حالت مدرن‌تر */
           position: relative;
