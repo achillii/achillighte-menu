@@ -8,7 +8,7 @@ class AchillighteMenu extends HTMLElement {
           gap: 24px;
           padding: 20px 0;
           background: transparent;
-          font-family: 'Helvetica Neue', sans-serif;
+          font-family: 'TitlingGothic FB Wide Light' ;
           position: relative;
         }
 
@@ -16,7 +16,7 @@ class AchillighteMenu extends HTMLElement {
         nav::before {
           content: "";
           position: absolute;
-          bottom: 0;
+          bottom: 20;
           left: 0;
           height: 1px;
           width: 100%;
@@ -25,11 +25,15 @@ class AchillighteMenu extends HTMLElement {
         }
 
         nav a {
+          font-family: 'TitlingGothicFBWideLight', sans-serif;
+          font-size: 16px; /* یا سایزی که می‌خوای مثلاً 18px یا 14px */
+          text-transform: uppercase; /* اگه می‌خوای حروف بزرگ باشن */
+          letter-spacing: 1px; /* فاصله بین حروف برای حالت مدرن‌تر */
           position: relative;
           color: white;
           text-decoration: none;
           padding-bottom: 8px;
-          font-size: 16px;
+          font-size: 9px;
           transition: color 0.3s ease;
           z-index: 1;
         }
@@ -44,17 +48,20 @@ class AchillighteMenu extends HTMLElement {
           height: 2px;
           background-color: #FFD580;
           transform: scaleX(0.3);
-          opacity: 0;
           transform-origin: center;
           transition: transform 0.3s ease, opacity 0.3s ease;
-          z-index: 2;
+          opacity: 0;
+          z-index: 1;
         }
 
-        nav a:hover {
-          color: #FFD580;
-        }
-
+        /* وقتی موس میره روش */
         nav a:hover::after {
+          transform: scaleX(1);
+          opacity: 1;
+        }
+
+        /* فقط لینک فعال (صفحه فعلی) همیشه نارنجی بمونه */
+        nav a.active::after {
           transform: scaleX(1);
           opacity: 1;
         }
