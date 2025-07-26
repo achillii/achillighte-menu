@@ -16,7 +16,7 @@ class AchillighteMenu extends HTMLElement {
         nav::before {
           content: "";
           position: absolute;
-          bottom: 0;
+          bottom: 20;
           left: 0;
           height: 1px;
           width: 100%;
